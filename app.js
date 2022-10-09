@@ -25,3 +25,22 @@ let helado = "Uva";
 if(!(helado === "fresa" && helado === "vainilla")){
     console.log("NO TENEMOS ESE SABOR!")
 }
+
+
+let color = 'red';
+
+switch(color){
+    case 'blue':
+    case 'yellow':
+        console.log('color primario');
+        break;
+    case 'red':
+        console.log('color secundario');
+        break;
+}
+
+//Arrays
+
+let colors = ["blue", "red", "yellow", "silver", "black"];
+
+colors[colors.length-1]
