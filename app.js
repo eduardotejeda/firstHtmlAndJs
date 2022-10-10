@@ -44,3 +44,14 @@ switch(color){
 let colors = ["blue", "red", "yellow", "silver", "black"];
 
 colors[colors.length-1]
+
+let figures = ["square", "circle", "triangle"];
+
+let allColorAndFigures = colors.concat(figures);
+
+// Loops
+
+for(let i = 1; i <= 10; i++) {
+    console.log("Hello", i);
+}
+
