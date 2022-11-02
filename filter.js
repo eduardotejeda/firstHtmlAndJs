@@ -1,9 +1,9 @@
 const nums = [34, 35, 67, 54, 109, 102, 32, 9];
 
-const odds = nums.filter(n => n % 2 === 1);
-const evens = nums.filter(n => n % 2 === 0);
+const odds = nums.filter(n => n % 2 === 1); //Create array of numeros impares
+const evens = nums.filter(n => n % 2 === 0); // Crea un arreglo de numero pares 
 
-const bigNums = nums.filter(n => n > 50);
+const bigNums = nums.filter(n => n > 50); //Crea una lista de numero mayores a 50
 
 
 const books = [
@@ -21,7 +21,7 @@ const books = [
     },
     {
         title: 'American Gods',
-        authors:['Neil Gaiman'],
+        authors:['Neil G aiman'],
         rating:4.42,
         genres: ['fantasy', 'epic']
     },
@@ -35,4 +35,12 @@ const books = [
 
 const shortForm = books.filter(book => (
     book.genres.includes('short stories') || book.genres.includes('essays')
-))
+)) // Filtra libros de una lista de objetos por categoria
+
+const goodBooks = books.filter(b => b.rating > 4.20) // Filtra libros con rating mayor a 4.20
+
+const query = 'The';
+const results = books.filter(book => {
+    const title = book.title.toLowerCase();
+    return title.includes(query.toLowerCase())
+})
