@@ -26,9 +26,9 @@ const books = [
         rating:4.11
     },
     {
-    title: 'American Gods',
-    authors:['Neil Gaiman'],
-    rating:4.42
+        title: 'American Gods',
+        authors:['Neil Gaiman'],
+        rating:4.42
     },
     {
         title: 'A Gentleman in Moscow',
