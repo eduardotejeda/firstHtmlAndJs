@@ -37,3 +37,31 @@ const {first, last, ...others} = runner;
 
 /*Make new variable base on propertie name*/
 const {country: nation, title: honorific} = runner
+
+
+
+/* Nested Destructuring */
+
+const results = [{
+    first: 'Eliud',
+    last: 'Kipchoge',
+    country: 'Kenya'
+},
+{
+    first: 'Feyisa',
+    last: 'Lilesa',
+    country: 'Ethiopia'
+},
+{
+    first:'Galen',
+    last: 'Rupp',
+    country:'Unided States'
+}
+]
+
+const [{first: goldWinner},{country}] = results
+
+
+//Better for nested do in it this way
+const [,silverMedal] = results;
+const {country} = silverMedal;
