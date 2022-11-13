@@ -26,7 +26,16 @@ const person = {
         return `${first} ${last } AKA ${nickName}`;
     },
     printBio() {
+        console.log(this);
         const fullName = this.fullName();
         console.log(`${fullName} is a person`)
+    },
+    laugh: () => {
+        console.log(this);
+        console.log(`${this.nickName} says HAHAHAHAHAHA!`)
     }
 }
+
+
+// Dont use arrow function => as method
+
