@@ -1,30 +1,5 @@
-/* 
-
-function makeDeck() { 
-    const deck = [];
-    const suits = ['hearts','diamonds','spades','clubs'];
-    const values = '2,3,4,5,6,7,8,9,10,J,Q,K,A'
-    for (let value of values.split(',')) {
-        for (let suit of suits){
-            deck.push({
-                value,
-                suit
-            })
-        }
-    }
-    return deck;
-}
-
-function drawCard(deck) {
-    return deck.pop()
-}
-
-// const myDeck = makeDeck();
-// cosnt card1 = drawCard(myDeck);
-
-*/
-
-const myDeck = { 
+const makeDeck = () => { 
+    return {
     deck : [],
     drawnCards : [],
     suits : ['hearts','diamonds','spades','clubs'],
@@ -70,18 +45,14 @@ const myDeck = {
         }
     }
 
+  }
+ 
 }
 
-/*
-//The Fisher–Yates shuffle
-function shuffle(arr) {
-    //loop over array backwards
-    for (let i = arr.length -1; i > 0; i--) {
-        //pick random index before current element
-        let j = Math.floor(Math.random() * (i+1));
-        //swap
-        [arr[i], arr[j]] = [arr[j], arr[i]];
-    }
-}
+const myDeck = makeDeck();
+myDeck.initializeDeck();
+myDeck.shuffle();
+const h1 = myDeck.drawMultiple(5);
 
-*/
+const deckTwo = makeDeck();
+deckTwo.initializeDeck()
